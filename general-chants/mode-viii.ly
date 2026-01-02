@@ -3,8 +3,8 @@ chantToneVIIIa = \relative c' {
   \key f \major
   \set Score.timing = ##f
 
-  c2 d4. \divisioMaxima
-  f2 e4 d4. \finalis 
+  <e, a c>2 <g bf d>4. \divisioMaxima
+  <a c f>2 e'4 <g, bf d>4. \finalis 
 }
 
 chantToneVIIIg = \relative c' {
@@ -12,6 +12,6 @@ chantToneVIIIg = \relative c' {
   \key f \major
   \set Score.timing = ##f
 
-  f2 e4 d c4. \divisioMaxima
-  d2 bf4 d c4. \finalis 
+  <a c f>2 e'4 <g, bf d> <e g c>4. \divisioMaxima
+  <f a d>2 bf4 <g bf d> <e g c>4. \finalis 
 }

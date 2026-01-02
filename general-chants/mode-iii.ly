@@ -3,6 +3,6 @@ chantToneIIIb = \relative c' {
   \key f \major
   \set Score.timing = ##f
 
-  c2 d4. \divisioMaxima
-  f2 e4. \finalis 
+  <e, g c>2 <f a d>4. \divisioMaxima
+  <a c f>2 <a c e>4. \finalis 
 }

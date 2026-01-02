@@ -3,8 +3,8 @@ chantToneIIA = \relative c' {
   \key e \major
   \set Score.timing = ##f
 
-  e2 ds4 cs e4. \divisioMaxima
-  e2 ds4 cs4. \finalis 
+  <a cs e>2 ds4 <fs, a cs> <gs cs e>4. \divisioMaxima
+  <a cs e>2 ds4 <e, gs cs>4. \finalis 
 }
 
 chantToneIID = \relative c' {
@@ -12,6 +12,6 @@ chantToneIID = \relative c' {
   \key b \major
   \set Score.timing = ##f
 
-  e2 ds4 cs b4. \divisioMaxima
-  b2 cs4. \finalis 
+  <gs b e>2 ds'4 <e, gs cs> <ds gs b>4. \divisioMaxima
+  <e gs b>2 <e gs cs>4. \finalis 
 }
