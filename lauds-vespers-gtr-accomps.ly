@@ -72,6 +72,8 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 \paper {
   #(set-paper-size '(cons (* 139.5 mm) (* 216 mm)))
+  ragged-last-bottom = ##f
+
   top-margin = 0.625\in
   left-margin = 0.625\in
   right-margin = 0.625\in
@@ -138,12 +140,18 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "ID" }
     \header {
       title = "Chant tone ID"
+      composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneID
-        % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneID }
+      \new StaffGroup <<
+        \new VaticanaStaff <<
+          \new VaticanaVoice = "sqChantID" \sqChantToneID
+        >>
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantID" \chantToneID
+          % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+          \new TabStaff { \chantToneID }
+        >>
       >>
       \layout {
         ragged-last = ##f
@@ -154,12 +162,18 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "If" }
     \header {
       title = "Chant tone If"
+      composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneIf
-        % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneIf }
+      \new StaffGroup <<
+        \new VaticanaStaff <<
+          \new VaticanaVoice = "sqChantIf" \sqChantToneIf
+        >>
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantIf" \chantToneIf
+          % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+          \new TabStaff { \chantToneIf }
+        >>
       >>
       \layout {
         ragged-last = ##f
@@ -170,10 +184,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "IIA" }
     \header {
       title = "Chant tone IIA"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneIIA
+        \new GregorianTranscriptionVoice = "chantIIA" \chantToneIIA
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIIA }
       >>
@@ -186,10 +201,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "IID" }
     \header {
       title = "Chant tone IID"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneIID
+        \new GregorianTranscriptionVoice = "chantIID" \chantToneIID
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIID }
       >>
@@ -202,10 +218,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "IIIb" }
     \header {
       title = "Chant tone IIIb"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneIIIb
+        \new GregorianTranscriptionVoice = "chantIIIb" \chantToneIIIb
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIIIb }
       >>
@@ -218,10 +235,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "IVa" }
     \header {
       title = "Chant tone IVa"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneIVa
+        \new GregorianTranscriptionVoice = "chantIVa" \chantToneIVa
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIVa }
       >>
@@ -234,10 +252,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "IVd" }
     \header {
       title = "Chant tone IVd"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneIVd
+        \new GregorianTranscriptionVoice = "chantIVd" \chantToneIVd
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIVd }
       >>
@@ -250,10 +269,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "Va" }
     \header {
       title = "Chant tone Va"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneVa
+        \new GregorianTranscriptionVoice = "chantVa" \chantToneVa
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVa }
       >>
@@ -266,10 +286,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "Vc" }
     \header {
       title = "Chant tone Vc"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneVc
+        \new GregorianTranscriptionVoice = "chantVc" \chantToneVc
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVc }
       >>
@@ -282,10 +303,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "VIF" }
     \header {
       title = "Chant tone VIF"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneVIF
+        \new GregorianTranscriptionVoice = "chantVIF" \chantToneVIF
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIF }
       >>
@@ -298,10 +320,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "VIIa" }
     \header {
       title = "Chant tone VIIa"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneVIIa
+        \new GregorianTranscriptionVoice = "chantVIIa" \chantToneVIIa
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIIa }
       >>
@@ -314,10 +337,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "VIId" }
     \header {
       title = "Chant tone VIId"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneVIId
+        \new GregorianTranscriptionVoice = "chantVIId" \chantToneVIId
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIId }
       >>
@@ -330,10 +354,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "VIIIa" }
     \header {
       title = "Chant tone VIIIa"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneVIIIa
+        \new GregorianTranscriptionVoice = "chantVIIIa" \chantToneVIIIa
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIIIa }
       >>
@@ -346,10 +371,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "VIIIg" }
     \header {
       title = "Chant tone VIIIg"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneVIIIg
+        \new GregorianTranscriptionVoice = "chantVIIIg" \chantToneVIIIg
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIIIg }
       >>
@@ -362,10 +388,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "Intercessions" }
     \header {
       title = "Chant tone Intercessions"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneIntercessions
+        \new GregorianTranscriptionVoice = "chantIntercessions" \chantToneIntercessions
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIntercessions }
       >>
@@ -378,10 +405,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "LordsPrayer" }
     \header {
       title = "Chant tone LordsPrayer"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneLordsPrayer
+        \new GregorianTranscriptionVoice = "chantLordsPrayer" \chantToneLordsPrayer
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneLordsPrayer }
       >>
@@ -394,10 +422,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "PrayerBasic" }
     \header {
       title = "Chant tone PrayerBasic"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantTonePrayerBasic
+        \new GregorianTranscriptionVoice = "chantPrayerBasic" \chantTonePrayerBasic
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantTonePrayerBasic }
       >>
@@ -410,10 +439,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "PrayerEndings" }
     \header {
       title = "Chant tone PrayerEndings"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantTonePrayerEndings
+        \new GregorianTranscriptionVoice = "chantPrayerEndings" \chantTonePrayerEndings
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantTonePrayerEndings }
       >>
@@ -426,10 +456,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "DismissalClergy" }
     \header {
       title = "Chant tone DismissalClergy"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneDismissalClergy
+        \new GregorianTranscriptionVoice = "chantDismissalClergy" \chantToneDismissalClergy
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneDismissalClergy }
       >>
@@ -442,10 +473,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \tocItem \markup { "DismissalLaity" }
     \header {
       title = "Chant tone DismissalLaity"
+      composer = " "
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "melody" \chantToneDismissalLaity
+        \new GregorianTranscriptionVoice = "chantDismissalLaity" \chantToneDismissalLaity
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneDismissalLaity }
       >>
