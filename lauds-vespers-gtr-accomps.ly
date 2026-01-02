@@ -209,6 +209,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIIIb }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -222,6 +225,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIVa }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {

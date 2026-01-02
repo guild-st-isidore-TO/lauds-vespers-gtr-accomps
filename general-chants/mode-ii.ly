@@ -1,19 +1,17 @@
 chantToneIIA = \relative c' {
+  \clef "treble_8"
+  \key e \major
   \set Score.timing = ##f
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+
+  e2 ds4 cs e4. \divisioMaxima
+  e2 ds4 cs4. \finalis 
 }
 
 chantToneIID = \relative c' {
+  \clef "treble_8"
+  \key b \major
   \set Score.timing = ##f
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+
+  e2 ds4 cs b4. \divisioMaxima
+  b2 cs4. \finalis 
 }

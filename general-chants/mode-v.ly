@@ -1,19 +1,17 @@
 chantToneVa = \relative c' {
+  \clef "treble_8"
+  \key d \major
   \set Score.timing = ##f
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+
+  d2 e4 b4. \divisioMaxima
+  a2 g4 b4. \finalis 
 }
 
 chantToneVc = \relative c' {
+  \clef "treble_8"
+  \key d \major
   \set Score.timing = ##f
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+
+  d2 e4 d4. \divisioMaxima
+  d2 b4 cs d4. \finalis 
 }

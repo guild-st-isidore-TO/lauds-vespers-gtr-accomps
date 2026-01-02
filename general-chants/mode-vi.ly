@@ -1,9 +1,8 @@
 chantToneVIF = \relative c' {
+  \clef "treble_8"
+  \key a \major
   \set Score.timing = ##f
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+
+  fs2 e4 d e4. \divisioMaxima
+  e2 fs4 d4. \finalis 
 }
