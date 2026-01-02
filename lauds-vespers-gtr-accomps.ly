@@ -1,12 +1,6 @@
 %{
-https://lilypond.org/doc/v2.25/Documentation/notation/overview-of-the-supported-styles
-
-https://lilypond.org/doc/v2.25/Documentation/notation/typesetting-gregorian-chant
-
-The predefined contexts VaticanaScore, VaticanaVoice, VaticanaStaff, and VaticanaLyrics
-can be used to engrave a piece of Gregorian chant in the style of the Editio Vaticana.
-These contexts initialize all relevant context and grob properties to proper values;
-you can immediately go ahead entering the chant, as the following excerpt demonstrates.
+Collection of chant tones with simple accompaniments for guitar.
+For Lauds (Morning Prayer) and Vespers (Evening Prayer), part of the Liturgy of Hours.
 %}
 
 \new VaticanaScore {
