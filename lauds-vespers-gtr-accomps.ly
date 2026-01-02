@@ -4,7 +4,7 @@ https://lilypond.org/doc/v2.25/Documentation/notation/common-notation-for-frette
 Typesetting chant tone accompaniments for Lauds and Vespers.
  * ------------------------------------- %}
 
-\version "2.24.4"
+\version "2.25.13"
 \language "english"
 
 %{ ----------------------------------------
@@ -12,7 +12,7 @@ Typesetting chant tone accompaniments for Lauds and Vespers.
  * ------------------------------------- %}
 
 % this includes the gregorian transcription definitions (v2.24, not needed in 2.25+)
-\include "gregorian.ly"
+% \include "gregorian.ly"
 
 symbols = {
   \time 3/4
@@ -72,6 +72,8 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 \paper {
   #(set-paper-size '(cons (* 139.5 mm) (* 216 mm)))
+  indent = 0
+  ragged-last = ##f
   ragged-last-bottom = ##f
 
   top-margin = 0.625\in
@@ -91,7 +93,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \hspace #0
         }
       }
-      subtitle = \markup { \abs-fontsize #18 \medium "on Guitar for Lauds and Vespers" }
+      subtitle = \markup { \abs-fontsize #18 "on Guitar for Lauds and Vespers" }
     }
     \paper {
       top-markup-spacing.basic-distance = #20
@@ -142,11 +144,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       title = "Chant tone ID"
       composer = " "
     }
+    \new VaticanaScore {
+      \new VaticanaStaff <<
+        \new VaticanaVoice = "sqChantID" \sqChantToneID
+      >>
+    }
     \score {
       \new StaffGroup <<
-        \new VaticanaStaff <<
-          \new VaticanaVoice = "sqChantID" \sqChantToneID
-        >>
         \new GregorianTranscriptionStaff <<
           \new GregorianTranscriptionVoice = "chantID" \chantToneID
           % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
@@ -154,6 +158,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         >>
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -165,10 +170,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new StaffGroup <<
+      \new VaticanaScore <<
         \new VaticanaStaff <<
           \new VaticanaVoice = "sqChantIf" \sqChantToneIf
         >>
+      >>
+      \new StaffGroup <<
         \new GregorianTranscriptionStaff <<
           \new GregorianTranscriptionVoice = "chantIf" \chantToneIf
           % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
@@ -176,6 +183,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         >>
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -193,6 +201,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneIIA }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -210,6 +219,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneIID }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -227,6 +237,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneIIIb }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -244,6 +255,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneIVa }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -261,6 +273,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneIVd }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -278,6 +291,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneVa }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -295,6 +309,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneVc }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -312,6 +327,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneVIF }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -329,6 +345,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneVIIa }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -346,6 +363,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneVIId }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -363,6 +381,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneVIIIa }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -380,6 +399,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneVIIIg }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -397,6 +417,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneIntercessions }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -414,6 +435,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneLordsPrayer }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -431,6 +453,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantTonePrayerBasic }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -448,6 +471,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantTonePrayerEndings }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -465,6 +489,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneDismissalClergy }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }
@@ -482,6 +507,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new TabStaff { \chantToneDismissalLaity }
       >>
       \layout {
+        indent = #0
         ragged-last = ##f
       }
     }

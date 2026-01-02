@@ -4,6 +4,12 @@ sqChantToneID = {
   \[ \cavum g \] a \[f \flexa e \melismaEnd \] \augmentum d \finalis
 }
 
+sqChantToneIf = {
+  \clef "vaticana-do3"
+  \[ \cavum a\] g f \augmentum a \divisioMaxima
+  \[ \cavum g\] a \augmentum f \finalis
+}
+
 chantToneID = \relative c' {
   \clef "treble_8"
   \key a \major
@@ -13,11 +19,6 @@ chantToneID = \relative c' {
   <a cs e>2 fs'4 <fs, a d> cs' <d, fs b>4. \finalis
 }
 
-sqChantToneIf = {
-  \clef "vaticana-do3"
-  \[ \cavum a\] g f \augmentum a \divisioMaxima
-  \[ \cavum g\] a \augmentum f \finalis
-}
 
 chantToneIf = \relative c' {
   \clef "treble_8"
