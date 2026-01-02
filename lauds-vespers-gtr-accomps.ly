@@ -4,6 +4,8 @@ https://lilypond.org/doc/v2.25/Documentation/notation/common-notation-for-frette
 Typesetting chant tone accompaniments for Lauds and Vespers.
  * ------------------------------------- %}
 
+\version "2.24.4"
+\language "english"
 
 %{ ----------------------------------------
  * Examples
@@ -143,6 +145,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneID }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -156,6 +161,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIf }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -169,6 +177,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIIA }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -182,6 +193,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIID }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -221,6 +235,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIVd }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -234,6 +251,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVa }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -247,6 +267,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVc }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -260,6 +283,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIF }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -273,6 +299,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIIa }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -286,6 +315,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIId }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -299,6 +331,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIIIa }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -312,6 +347,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneVIIIg }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -325,6 +363,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneIntercessions }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -338,6 +379,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneLordsPrayer }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -351,6 +395,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantTonePrayerBasic }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -364,6 +411,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantTonePrayerEndings }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -377,6 +427,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneDismissalClergy }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
   \bookpart {
@@ -390,6 +443,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
         \new TabStaff { \chantToneDismissalLaity }
       >>
+      \layout {
+        ragged-last = ##f
+      }
     }
   }
 }
