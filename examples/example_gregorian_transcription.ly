@@ -4,6 +4,8 @@ https://lilypond.org/doc/v2.25/Documentation/learning/gregorian-transcription-te
 This example demonstrates how to do modern transcription of Gregorian music. Gregorian music has no measure, no stems; it uses only half and quarter note heads, and special marks, indicating rests of different length.
 %}
 
+\include "gregorian.ly"
+
 chant = \relative c' {
   \set Score.timing = ##f
   f4 a2 \divisioMinima
