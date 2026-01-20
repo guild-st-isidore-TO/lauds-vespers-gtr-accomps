@@ -1,17 +1,17 @@
 chantToneVIIa = \relative c' {
   \clef "treble_8"
-  \key c \major
+  \key ef \major
   \set Score.timing = ##f
 
-  <f, a d>2 e'4 f <f, a d>4. \divisioMaxima
-  <e g c>2 b'4 <c, e a>4. \finalis 
+  f2 g4 af f4. \divisioMaxima
+  ef2 d4 c4. \finalis 
 }
 
 chantToneVIId = \relative c' {
   \clef "treble_8"
-  \key c \major
+  \key ef \major
   \set Score.timing = ##f
 
-  <f, a d>2 e'4 f <f, a d>4. \divisioMaxima
-  <e g c>2 e'4 <f, a d>4. \finalis 
+  <af c f>2 g'4 af <af, c f>4. \divisioMaxima
+  <g bf ef>2 g'4 <af, c f>4. \finalis 
 }
