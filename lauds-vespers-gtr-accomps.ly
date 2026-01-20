@@ -4,7 +4,7 @@ https://lilypond.org/doc/v2.25/Documentation/notation/common-notation-for-frette
 Typesetting chant tone accompaniments for Lauds and Vespers.
  * ------------------------------------- %}
 
-\version "2.25.13"
+\version "2.25.18"
 \language "english"
 
 %{ ----------------------------------------
@@ -144,18 +144,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       title = "Chant tone ID"
       composer = " "
     }
-    \new VaticanaScore {
-      \new VaticanaStaff <<
-        \new VaticanaVoice = "sqChantID" \sqChantToneID
-      >>
-    }
     \score {
-      \new StaffGroup <<
-        \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantID" \chantToneID
-          % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-          \new TabStaff { \chantToneID }
-        >>
+      \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionVoice = "chantID" \chantToneID
+        % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new TabStaff { \chantToneID }
       >>
       \layout {
         indent = #0
@@ -170,17 +163,10 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new VaticanaScore <<
-        \new VaticanaStaff <<
-          \new VaticanaVoice = "sqChantIf" \sqChantToneIf
-        >>
-      >>
-      \new StaffGroup <<
-        \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantIf" \chantToneIf
-          % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-          \new TabStaff { \chantToneIf }
-        >>
+      \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionVoice = "chantIf" \chantToneIf
+        % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new TabStaff { \chantToneIf }
       >>
       \layout {
         indent = #0
