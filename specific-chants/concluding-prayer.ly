@@ -1,19 +1,17 @@
 chantTonePrayerBasic = \relative c' {
   \set Score.timing = ##f
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+  \clef "treble_8"
+  \key a \major
+
+  <cs' e a>2 <cs fs a>4. \divisioMaior
+  <d fs a>2 <cs e a>4. \finalis
 }
 
 chantTonePrayerEndings = \relative c' {
   \set Score.timing = ##f
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+  \clef "treble_8"
+  \key a \major
+
+  <cs' e a>2 a'4 <b, d fs> <cs e a>4. \divisioMaior
+  <d fs a>2 <cs e a>4. \finalis 
 }

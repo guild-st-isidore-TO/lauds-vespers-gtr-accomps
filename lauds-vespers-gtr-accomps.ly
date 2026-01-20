@@ -409,6 +409,24 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
   }
   \bookpart {
+    \tocItem \markup { "LordsPrayerPreface" }
+    \header {
+      title = "Chant tone LordsPrayerPreface"
+      composer = " "
+    }
+    \score {
+      \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" \chantToneLordsPrayerPreface
+        % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new TabStaff { \chantToneLordsPrayerPreface }
+      >>
+      \layout {
+        indent = #0
+        ragged-last = ##f
+      }
+    }
+  }
+  \bookpart {
     \tocItem \markup { "LordsPrayer" }
     \header {
       title = "Chant tone LordsPrayer"

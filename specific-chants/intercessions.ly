@@ -1,9 +1,13 @@
 chantToneIntercessions = \relative c' {
+  \clef "treble_8"
   \set Score.timing = ##f
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+  \key c \major
+
+  f'4 g \divisioMinima
+  <d f a>2 g4 <d g bf> <c f a> \divisioMaior
+  <c e a>2 g'4 f <c e g>4. \finalis \break
+
+  s4 s \divisioMinima
+  s2 s4 \divisioMaior
+  <c e g>2 a'4 <a, c f>4. \finalis
 }
