@@ -481,6 +481,24 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
   }
   \bookpart {
+    \tocItem \markup { "PrayerPetition" }
+    \header {
+      title = "Chant tone PrayerPetition"
+      composer = " "
+    }
+    \score {
+      \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionVoice = "chantPrayerPetition" { \clef "treble_8" \chantTonePrayerPetition}
+        % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new TabStaff { \clef tab \chantTonePrayerPetition }
+      >>
+      \layout {
+        indent = #0
+        ragged-last = ##f
+      }
+    }
+  }
+  \bookpart {
     \tocItem \markup { "DismissalClergy" }
     \header {
       title = "Chant tone DismissalClergy"
