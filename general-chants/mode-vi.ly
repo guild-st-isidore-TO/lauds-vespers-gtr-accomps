@@ -1,5 +1,4 @@
 chantToneVIF = \relative c' {
-  \clef "treble_8"
   \key c \major
   \set Score.timing = ##f
 

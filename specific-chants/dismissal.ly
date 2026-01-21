@@ -1,6 +1,5 @@
 % by Priest or Deacon
 chantToneDismissalClergy = \relative c' {
-  \clef "treble_8"
   \key c \major
   \set Score.timing = ##f
   
@@ -14,7 +13,6 @@ chantToneDismissalClergy = \relative c' {
 
 % when no Priest or Deacon is present
 chantToneDismissalLaity = \relative c' {
-  \clef "treble_8"
   \key c \major
   \set Score.timing = ##f
   

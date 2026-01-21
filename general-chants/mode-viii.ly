@@ -1,5 +1,4 @@
 chantToneVIIIa = \relative c' {
-  \clef "treble_8"
   \key a \major
   \set Score.timing = ##f
 
@@ -8,7 +7,6 @@ chantToneVIIIa = \relative c' {
 }
 
 chantToneVIIIg = \relative c' {
-  \clef "treble_8"
   \key a \major
   \set Score.timing = ##f
 

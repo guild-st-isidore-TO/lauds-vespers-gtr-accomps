@@ -146,9 +146,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantID" \chantToneID
+        \new GregorianTranscriptionVoice = "chantID" { \clef "treble_8" \chantToneID }
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneID }
+        \new TabStaff { \clef tab \chantToneID }
       >>
       \layout {
         indent = #0
@@ -164,9 +164,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIf" \chantToneIf
+        \new GregorianTranscriptionVoice = "chantIf" { \clef "treble_8" \chantToneIf }
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneIf }
+        \new TabStaff { \clef tab \chantToneIf }
       >>
       \layout {
         indent = #0
@@ -182,9 +182,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIIA" \chantToneIIA
+        \new GregorianTranscriptionVoice = "chantIIA" { \clef "treble_8" \chantToneIIA}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneIIA }
+        \new TabStaff { \clef tab \chantToneIIA }
       >>
       \layout {
         indent = #0
@@ -200,9 +200,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIID" \chantToneIID
+        \new GregorianTranscriptionVoice = "chantIID" { \clef "treble_8" \chantToneIID}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneIID }
+        \new TabStaff { \clef tab \chantToneIID }
       >>
       \layout {
         indent = #0
@@ -218,9 +218,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIIIb" \chantToneIIIb
+        \new GregorianTranscriptionVoice = "chantIIIb" { \clef "treble_8" \chantToneIIIb}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneIIIb }
+        \new TabStaff { \clef tab \chantToneIIIb }
       >>
       \layout {
         indent = #0
@@ -236,9 +236,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIVa" \chantToneIVa
+        \new GregorianTranscriptionVoice = "chantIVa" { \clef "treble_8" \chantToneIVa}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneIVa }
+        \new TabStaff { \clef tab \chantToneIVa }
       >>
       \layout {
         indent = #0
@@ -254,9 +254,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIVd" \chantToneIVd
+        \new GregorianTranscriptionVoice = "chantIVd" { \clef "treble_8" \chantToneIVd}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneIVd }
+        \new TabStaff { \clef tab \chantToneIVd }
       >>
       \layout {
         indent = #0
@@ -272,9 +272,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVa" \chantToneVa
+        \new GregorianTranscriptionVoice = "chantVa" { \clef "treble_8" \chantToneVa}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneVa }
+        \new TabStaff { \clef tab \chantToneVa }
       >>
       \layout {
         indent = #0
@@ -290,9 +290,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVc" \chantToneVc
+        \new GregorianTranscriptionVoice = "chantVc" { \clef "treble_8" \chantToneVc}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneVc }
+        \new TabStaff { \clef tab \chantToneVc }
       >>
       \layout {
         indent = #0
@@ -308,9 +308,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIF" \chantToneVIF
+        \new GregorianTranscriptionVoice = "chantVIF" { \clef "treble_8" \chantToneVIF}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneVIF }
+        \new TabStaff { \clef tab \chantToneVIF }
       >>
       \layout {
         indent = #0
@@ -326,9 +326,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIIa" \chantToneVIIa
+        \new GregorianTranscriptionVoice = "chantVIIa" { \clef "treble_8" \chantToneVIIa}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneVIIa }
+        \new TabStaff { \clef tab \chantToneVIIa }
       >>
       \layout {
         indent = #0
@@ -344,9 +344,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIId" \chantToneVIId
+        \new GregorianTranscriptionVoice = "chantVIId" { \clef "treble_8" \chantToneVIId}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneVIId }
+        \new TabStaff { \clef tab \chantToneVIId }
       >>
       \layout {
         indent = #0
@@ -362,9 +362,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIIIa" \chantToneVIIIa
+        \new GregorianTranscriptionVoice = "chantVIIIa" { \clef "treble_8" \chantToneVIIIa}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneVIIIa }
+        \new TabStaff { \clef tab \chantToneVIIIa }
       >>
       \layout {
         indent = #0
@@ -380,9 +380,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIIIg" \chantToneVIIIg
+        \new GregorianTranscriptionVoice = "chantVIIIg" { \clef "treble_8" \chantToneVIIIg}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneVIIIg }
+        \new TabStaff { \clef tab \chantToneVIIIg }
       >>
       \layout {
         indent = #0
@@ -398,9 +398,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIntercessions" \chantToneIntercessions
+        \new GregorianTranscriptionVoice = "chantIntercessions" { \clef "treble_8" \chantToneIntercessions}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneIntercessions }
+        \new TabStaff { \clef tab \chantToneIntercessions }
       >>
       \layout {
         indent = #0
@@ -416,9 +416,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" \chantToneLordsPrayerPreface
+        \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" { \clef "treble_8" \chantToneLordsPrayerPreface}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneLordsPrayerPreface }
+        \new TabStaff { \clef tab \chantToneLordsPrayerPreface }
       >>
       \layout {
         indent = #0
@@ -434,9 +434,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantLordsPrayer" \chantToneLordsPrayer
+        \new GregorianTranscriptionVoice = "chantLordsPrayer" { \clef "treble_8" \chantToneLordsPrayer}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneLordsPrayer }
+        \new TabStaff { \clef tab \chantToneLordsPrayer }
       >>
       \layout {
         indent = #0
@@ -452,9 +452,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantPrayerBasic" \chantTonePrayerBasic
+        \new GregorianTranscriptionVoice = "chantPrayerBasic" { \clef "treble_8" \chantTonePrayerBasic}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantTonePrayerBasic }
+        \new TabStaff { \clef tab \chantTonePrayerBasic }
       >>
       \layout {
         indent = #0
@@ -470,9 +470,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantPrayerEndings" \chantTonePrayerEndings
+        \new GregorianTranscriptionVoice = "chantPrayerEndings" { \clef "treble_8" \chantTonePrayerEndings}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantTonePrayerEndings }
+        \new TabStaff { \clef tab \chantTonePrayerEndings }
       >>
       \layout {
         indent = #0
@@ -488,9 +488,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantDismissalClergy" \chantToneDismissalClergy
+        \new GregorianTranscriptionVoice = "chantDismissalClergy" { \clef "treble_8" \chantToneDismissalClergy}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneDismissalClergy }
+        \new TabStaff { \clef tab \chantToneDismissalClergy }
       >>
       \layout {
         indent = #0
@@ -506,9 +506,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     }
     \score {
       \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantDismissalLaity" \chantToneDismissalLaity
+        \new GregorianTranscriptionVoice = "chantDismissalLaity" { \clef "treble_8" \chantToneDismissalLaity}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new TabStaff { \chantToneDismissalLaity }
+        \new TabStaff { \clef tab \chantToneDismissalLaity }
       >>
       \layout {
         indent = #0
