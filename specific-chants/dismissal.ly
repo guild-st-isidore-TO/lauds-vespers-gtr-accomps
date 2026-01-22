@@ -24,6 +24,8 @@ chantToneDismissalClergyWords = \lyricmode {
   the Fa -- ther, and the Son,
   and the Ho -- ly Spi -- rit.
   A -- men.
+  Go in peace.
+  Thanks be to God.
 }
 
 % when no Priest or Deacon is present
@@ -31,15 +33,15 @@ chantToneDismissalLaity = \relative c' {
   \key a \major
   \set Score.timing = ##f
   
-  <cs e a>4 a' a a a <cs, fs a>4. \divisioMaior \break
+  <cs e a>4 a' a a <cs, fs a>4. \divisioMaior \break
   <cs e a>4 a' a gs <b, d fs> <cs e a> a'4. \divisioMaior \break
-  <cs, fs a>4 a' a a a a a a <cs, e a>4. \divisioMaior \break
+  <cs, fs a>4 a' a a a a \break a a <cs, e a>4. \finalis
   <d fs a>4 <cs e a> \finalis
 }
 
 chantToneDismissalLaityWords = \lyricmode {
   May the Lord bless us,
   pro -- tect us from all e -- vil,
-  and bring us to ev -- er -- lasting life.
+  and bring us to ev -- er -- last -- ing life.
   A -- men.
 }

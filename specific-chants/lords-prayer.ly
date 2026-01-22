@@ -8,9 +8,9 @@ chantToneLordsPrayerPreface = \relative c' {
 }
 
 chantToneLordsPrayerPrefaceWords = \lyricmode {
-  With longing for the coming of God's kingdom,
-  let us offer our prayer
-  to the Father.
+  By the Sav -- iour's com -- mand
+  and formed by di -- vine tea -- ching,
+  we dare to say:
 }
 
 chantToneLordsPrayer = \relative c' {
@@ -19,7 +19,7 @@ chantToneLordsPrayer = \relative c' {
   
   <a c f(>4 g') <c, f a> a' \divisioMinima
   g <c, f bf> a' <a, c g'> f' \divisioMinima \break
-  <bf, d g> f' f( g) <c, f a> <bf d g> \divisioMaxima
+  <bf, d g> f' f( g) <c, f a> <bf d g> \divisioMaxima \break
   a' <d, g bf(> a') g( a) <a, c g'> f' \divisioMaior \break
   a <d, g bf(> a') g <a, c g'> f' \divisioMaior \break
   <bf, d g> a' g f <a, d f(> g') a <bf, d g(> a') g \finalis \break
@@ -33,12 +33,12 @@ chantToneLordsPrayer = \relative c' {
 
 chantToneLordsPrayerWords = \lyricmode {
   Our Fa -- ther, who art in hea -- ven,
-  hal -- lowed be thy name;
-  thy king -- dom come;
-  thy will be done on earth as it is in hea -- ven.
-  Give us this day our dai -- ly bread;
-  and for -- give us our tres -- passes.
-  As we forgive those who tres -- pass a -- gainst us;
-  and lead us not into temp -- ta -- tion,
+  hal -- lowed be thy name,
+  thy king -- dom co -- me,
+  thy will be do -- ne on earth as it is in hea -- ven.
+  Give us this day our dai -- ly bread,
+  and for -- give us our tres -- pass -- es.
+  As we for -- give those who tres -- pass a -- gainst us,
+  and lead us not in -- to temp -- ta -- tion,
   but de -- liv -- er us from e -- vil.
 }
