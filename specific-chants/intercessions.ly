@@ -9,3 +9,8 @@ chantToneIntercessions = \relative c' {
   s2 s4 \divisioMaxima
   <c e g>2 a'4 <a, c f>4. \finalis
 }
+
+chantToneIntercessionsChords = \chordmode {
+  a1:m c4.
+  c2. f2 d4:m
+}

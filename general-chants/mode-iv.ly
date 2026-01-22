@@ -6,10 +6,20 @@ chantToneIVa = \relative c' {
   <c e g>2 e4 <b e g> <c e a>4. \finalis 
 }
 
+chantToneIVaChords = \chordmode {
+  a1:m c4.
+  c2. f2 d4:m
+}
+
 chantToneIVd = \relative c' {
   \key c \major
   \set Score.timing = ##f
 
   <c e a>2 g'4 a e4. \divisioMaxima
   e2 f4 e d4. \finalis 
+}
+
+chantToneIVdChords = \chordmode {
+  a1:m c4.
+  c2. f2 d4:m
 }

@@ -17,6 +17,11 @@ chantToneDismissalClergy = \relative c' {
   <e a cs(> b') a gs <b, e a>4.( <b e gs>) \finalis
 }
 
+chantToneDismissalClergyChords = \chordmode {
+  a1:m c4.
+  c2. f2 d4:m
+}
+
 chantToneDismissalClergyWords = \lyricmode {
   The Lord be with you.
   And with your spi -- rit.
@@ -37,6 +42,11 @@ chantToneDismissalLaity = \relative c' {
   <cs e a>4 a' a gs <b, d fs> <cs e a> a'4. \divisioMaior \break
   <cs, fs a>4 a' a a a a \break a a <cs, e a>4. \finalis
   <d fs a>4 <cs e a> \finalis
+}
+
+chantToneDismissalLaityChords = \chordmode {
+  a1:m c4.
+  c2. f2 d4:m
 }
 
 chantToneDismissalLaityWords = \lyricmode {

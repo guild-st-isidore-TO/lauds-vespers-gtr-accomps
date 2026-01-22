@@ -7,16 +7,16 @@ chantToneLordsPrayerPreface = \relative c' {
   <bf d g>4 f'( g) <c, f a> <c e g>4. \finalis
 }
 
-chantToneLordsPrayerPrefaceWords = \lyricmode {
-  By the Sav -- iour's com -- mand
-  and formed by di -- vine tea -- ching,
-  we dare to say:
-}
-
 chantToneLordsPrayerPrefaceChords = \chordmode {
   f2 c2. f4.
   d2. d1 f4.
   g2. f4 c4.
+}
+
+chantToneLordsPrayerPrefaceWords = \lyricmode {
+  By the Sav -- iour's com -- mand
+  and formed by di -- vine tea -- ching,
+  we dare to say:
 }
 
 chantToneLordsPrayer = \relative c' {
@@ -35,6 +35,12 @@ chantToneLordsPrayer = \relative c' {
   g <a, d f> g' a <bf, d g> f' <a, d f> g' a <bf, d g(> a') g \divisioMaxima \break
   <f, a d> f' <bf, d g> g' g g a <a, c g'(> f') f \divisioMaxima \break
   <bf, d f> g' <bf, d g> g' g a <c, e g(> f) <a, c f> \finalis 
+}
+
+chantToneLordsPrayerChords = \chordmode {
+  f2 c2. f4.
+  d2. d1 f4.
+  g2. f4 c4.
 }
 
 chantToneLordsPrayerWords = \lyricmode {

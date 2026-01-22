@@ -189,8 +189,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIIA" { \clef "treble_8" \chantToneIIA}
+      <<
+        \new ChordNames {
+          \chantToneIIAChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantIIA" { \clef "treble_8" \chantToneIIA}
+        >>
         \new TabStaff { \clef tab \chantToneIIA }
       >>
       \layout {
@@ -206,8 +211,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIID" { \clef "treble_8" \chantToneIID}
+      <<
+        \new ChordNames {
+          \chantToneIIDChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantIID" { \clef "treble_8" \chantToneIID}
+        >>
         \new TabStaff { \clef tab \chantToneIID }
       >>
       \layout {
@@ -223,8 +233,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIIIb" { \clef "treble_8" \chantToneIIIb}
+      <<
+        \new ChordNames {
+          \chantToneIIIbChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantIIIb" { \clef "treble_8" \chantToneIIIb}
+        >>
         \new TabStaff { \clef tab \chantToneIIIb }
       >>
       \layout {
@@ -240,8 +255,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIVa" { \clef "treble_8" \chantToneIVa}
+      <<
+        \new ChordNames {
+          \chantToneIVaChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantIVa" { \clef "treble_8" \chantToneIVa}
+        >>
         \new TabStaff { \clef tab \chantToneIVa }
       >>
       \layout {
@@ -257,8 +277,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIVd" { \clef "treble_8" \chantToneIVd}
+      <<
+        \new ChordNames {
+          \chantToneIVdChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantIVd" { \clef "treble_8" \chantToneIVd}
+        >>
         \new TabStaff { \clef tab \chantToneIVd }
       >>
       \layout {
@@ -274,8 +299,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVa" { \clef "treble_8" \chantToneVa}
+      <<
+        \new ChordNames {
+          \chantToneVaChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantVa" { \clef "treble_8" \chantToneVa}
+        >>
         \new TabStaff { \clef tab \chantToneVa }
       >>
       \layout {
@@ -291,8 +321,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVc" { \clef "treble_8" \chantToneVc}
+      <<
+        \new ChordNames {
+          \chantToneVcChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantVc" { \clef "treble_8" \chantToneVc}
+        >>
         \new TabStaff { \clef tab \chantToneVc }
       >>
       \layout {
@@ -308,8 +343,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIF" { \clef "treble_8" \chantToneVIF}
+      <<
+        \new ChordNames {
+          \chantToneVIFChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantVIF" { \clef "treble_8" \chantToneVIF}
+        >>
         \new TabStaff { \clef tab \chantToneVIF }
       >>
       \layout {
@@ -325,8 +365,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIIa" { \clef "treble_8" \chantToneVIIa}
+      <<
+        \new ChordNames {
+          \chantToneVIIaChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantVIIa" { \clef "treble_8" \chantToneVIIa}
+        >>
         \new TabStaff { \clef tab \chantToneVIIa }
       >>
       \layout {
@@ -342,8 +387,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIId" { \clef "treble_8" \chantToneVIId}
+      <<
+        \new ChordNames {
+          \chantToneVIIdChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantVIId" { \clef "treble_8" \chantToneVIId}
+        >>
         \new TabStaff { \clef tab \chantToneVIId }
       >>
       \layout {
@@ -359,8 +409,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIIIa" { \clef "treble_8" \chantToneVIIIa}
+      <<
+        \new ChordNames {
+          \chantToneVIIIaChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantVIIIa" { \clef "treble_8" \chantToneVIIIa}
+        >>
         \new TabStaff { \clef tab \chantToneVIIIa }
       >>
       \layout {
@@ -376,8 +431,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantVIIIg" { \clef "treble_8" \chantToneVIIIg}
+      <<
+        \new ChordNames {
+          \chantToneVIIIgChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantVIIIg" { \clef "treble_8" \chantToneVIIIg}
+        >>
         \new TabStaff { \clef tab \chantToneVIIIg }
       >>
       \layout {
@@ -393,8 +453,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantIntercessions" { \clef "treble_8" \chantToneIntercessions}
+      <<
+        \new ChordNames {
+          \chantToneIntercessionsChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantIntercessions" { \clef "treble_8" \chantToneIntercessions}
+        >>
         \new TabStaff { \clef tab \chantToneIntercessions }
       >>
       \layout {
@@ -417,13 +482,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \new GregorianTranscriptionStaff <<
           \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" { \clef "treble_8" \chantToneLordsPrayerPreface}
           \new Lyrics = "chantLordsPrayerPreface"
-          \context Lyrics = "chantLordsPrayerPreface" {
-            \lyricsto "chantLordsPrayerPreface" {
-              \chantToneLordsPrayerPrefaceWords
-            }
-          }
         >>
         \new TabStaff { \clef tab \chantToneLordsPrayerPreface }
+        \context Lyrics = "chantLordsPrayerPreface" {
+          \lyricsto "chantLordsPrayerPreface" {
+            \chantToneLordsPrayerPrefaceWords
+          }
+        }
       >>
       \layout {
         indent = #0
@@ -438,9 +503,14 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantLordsPrayer" { \clef "treble_8" \chantToneLordsPrayer}
-        \new Lyrics = "chantLordsPrayer"
+      <<
+        \new ChordNames {
+          \chantToneLordsPrayerChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantLordsPrayer" { \clef "treble_8" \chantToneLordsPrayer}
+          \new Lyrics = "chantLordsPrayer"
+        >>
         \new TabStaff { \clef tab \chantToneLordsPrayer }
         \context Lyrics = "chantLordsPrayer" {
           \lyricsto "chantLordsPrayer" {
@@ -461,8 +531,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantPrayerBasic" { \clef "treble_8" \chantTonePrayerBasic}
+      <<
+        \new ChordNames {
+          \chantTonePrayerBasicChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantPrayerBasic" { \clef "treble_8" \chantTonePrayerBasic}
+        >>
         \new TabStaff { \clef tab \chantTonePrayerBasic }
       >>
       \layout {
@@ -478,8 +553,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantPrayerEndings" { \clef "treble_8" \chantTonePrayerEndings}
+      <<
+        \new ChordNames {
+          \chantTonePrayerEndingsChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantPrayerEndings" { \clef "treble_8" \chantTonePrayerEndings}
+        >>
         \new TabStaff { \clef tab \chantTonePrayerEndings }
       >>
       \layout {
@@ -495,9 +575,14 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantPrayerPetition" { \clef "treble_8" \chantTonePrayerPetition}
-        \new Lyrics = "chantPrayerPetition"
+      <<
+        \new ChordNames {
+          \chantTonePrayerPetitionChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantPrayerPetition" { \clef "treble_8" \chantTonePrayerPetition}
+          \new Lyrics = "chantPrayerPetition"
+        >>
         \new TabStaff { \clef tab \chantTonePrayerPetition }
         \context Lyrics = "chantPrayerPetition" {
           \lyricsto "chantPrayerPetition" {
@@ -518,9 +603,14 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantDismissalClergy" { \clef "treble_8" \chantToneDismissalClergy}
-        \new Lyrics = "chantDismissalClergy"
+      <<
+        \new ChordNames {
+          \chantToneDismissalClergyChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantDismissalClergy" { \clef "treble_8" \chantToneDismissalClergy}
+          \new Lyrics = "chantDismissalClergy"
+        >>
         \new TabStaff { \clef tab \chantToneDismissalClergy }
         \context Lyrics = "chantDismissalClergy" {
           \lyricsto "chantDismissalClergy" {
@@ -541,9 +631,14 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantDismissalLaity" { \clef "treble_8" \chantToneDismissalLaity}
-        \new Lyrics = "chantDismissalLaity"
+      <<
+        \new ChordNames {
+          \chantToneDismissalLaityChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantDismissalLaity" { \clef "treble_8" \chantToneDismissalLaity}
+          \new Lyrics = "chantDismissalLaity"
+        >>
         \new TabStaff { \clef tab \chantToneDismissalLaity }
         \context Lyrics = "chantDismissalLaity" {
           \lyricsto "chantDismissalLaity" {
