@@ -13,6 +13,12 @@ chantToneLordsPrayerPrefaceWords = \lyricmode {
   we dare to say:
 }
 
+chantToneLordsPrayerPrefaceChords = \chordmode {
+  f2 c2. f4.
+  d2. d1 f4.
+  g2. f4 c4.
+}
+
 chantToneLordsPrayer = \relative c' {
   \key bf \major
   \set Score.timing = ##f

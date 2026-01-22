@@ -145,9 +145,14 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantID" { \clef "treble_8" \chantToneID }
-        % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+      <<
+        \new ChordNames {
+          \chantToneIDChords
+        }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantID" { \clef "treble_8" \chantToneID }
+          % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        >>
         \new TabStaff { \clef tab \chantToneID }
       >>
       \layout {
@@ -415,16 +420,21 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       composer = " "
     }
     \score {
-      \new GregorianTranscriptionStaff <<
-        \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" { \clef "treble_8" \chantToneLordsPrayerPreface}
-        % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
-        \new Lyrics = "chantLordsPrayerPreface"
-        \new TabStaff { \clef tab \chantToneLordsPrayerPreface }
-        \context Lyrics = "chantLordsPrayerPreface" {
-          \lyricsto "chantLordsPrayerPreface" {
-            \chantToneLordsPrayerPrefaceWords
-          }
+      <<
+        \new ChordNames {
+          \chantToneLordsPrayerPrefaceChords
         }
+        \new GregorianTranscriptionStaff <<
+          \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" { \clef "treble_8" \chantToneLordsPrayerPreface}
+          % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+          \new Lyrics = "chantLordsPrayerPreface"
+          \context Lyrics = "chantLordsPrayerPreface" {
+            \lyricsto "chantLordsPrayerPreface" {
+              \chantToneLordsPrayerPrefaceWords
+            }
+          }
+        >>
+        \new TabStaff { \clef tab \chantToneLordsPrayerPreface }
       >>
       \layout {
         indent = #0
