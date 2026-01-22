@@ -23,3 +23,9 @@ chantTonePrayerPetition = \relative c' {
   a a a gs fs a a4. \divisioMinima <cs, e a>4 a'4. \divisioMinima \break
   a4 a a a <cs, e a>4. <b d fs> \finalis <d fs a> <cs e a> \finalis 
 }
+
+chantTonePrayerPetitionWords = \lyricmode {
+  We ask this through our Lord Jesus Christ, your Son,
+  who lives and reigns with you and the Holy Spirit,
+  one God, for ev -- er and ev -- er. Amen.
+}

@@ -418,7 +418,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       \new GregorianTranscriptionStaff <<
         \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" { \clef "treble_8" \chantToneLordsPrayerPreface}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new Lyrics = "chantLordsPrayerPreface"
         \new TabStaff { \clef tab \chantToneLordsPrayerPreface }
+        \context Lyrics = "chantLordsPrayerPreface" {
+          \lyricsto "chantLordsPrayerPreface" {
+            \chantToneLordsPrayerPrefaceWords
+          }
+        }
       >>
       \layout {
         indent = #0
@@ -436,7 +442,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       \new GregorianTranscriptionStaff <<
         \new GregorianTranscriptionVoice = "chantLordsPrayer" { \clef "treble_8" \chantToneLordsPrayer}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new Lyrics = "chantLordsPrayer"
         \new TabStaff { \clef tab \chantToneLordsPrayer }
+        \context Lyrics = "chantLordsPrayer" {
+          \lyricsto "chantLordsPrayer" {
+            \chantToneLordsPrayerWords
+          }
+        }
       >>
       \layout {
         indent = #0
@@ -490,7 +502,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       \new GregorianTranscriptionStaff <<
         \new GregorianTranscriptionVoice = "chantPrayerPetition" { \clef "treble_8" \chantTonePrayerPetition}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new Lyrics = "chantPrayerPetition"
         \new TabStaff { \clef tab \chantTonePrayerPetition }
+        \context Lyrics = "chantPrayerPetition" {
+          \lyricsto "chantPrayerPetition" {
+            \chantTonePrayerPetitionWords
+          }
+        }
       >>
       \layout {
         indent = #0
@@ -508,7 +526,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       \new GregorianTranscriptionStaff <<
         \new GregorianTranscriptionVoice = "chantDismissalClergy" { \clef "treble_8" \chantToneDismissalClergy}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new Lyrics = "chantDismissalClergy"
         \new TabStaff { \clef tab \chantToneDismissalClergy }
+        \context Lyrics = "chantDismissalClergy" {
+          \lyricsto "chantDismissalClergy" {
+            \chantToneDismissalClergyWords
+          }
+        }
       >>
       \layout {
         indent = #0
@@ -526,7 +550,13 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
       \new GregorianTranscriptionStaff <<
         \new GregorianTranscriptionVoice = "chantDismissalLaity" { \clef "treble_8" \chantToneDismissalLaity}
         % \new GregorianTranscriptionLyrics = "one" \lyricsto melody \verba
+        \new Lyrics = "chantDismissalLaity"
         \new TabStaff { \clef tab \chantToneDismissalLaity }
+        \context Lyrics = "chantDismissalLaity" {
+          \lyricsto "chantDismissalLaity" {
+            \chantToneDismissalLaityWords
+          }
+        }
       >>
       \layout {
         indent = #0

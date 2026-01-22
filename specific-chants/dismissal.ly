@@ -17,6 +17,15 @@ chantToneDismissalClergy = \relative c' {
   <e a cs(> b') a gs <b, e a>4.( <b e gs>) \finalis
 }
 
+chantToneDismissalClergyWords = \lyricmode {
+  The Lord be with you.
+  And with your spi -- rit.
+  May al -- migh -- ty God bless you,
+  the Fa -- ther, and the Son,
+  and the Ho -- ly Spi -- rit.
+  A -- men.
+}
+
 % when no Priest or Deacon is present
 chantToneDismissalLaity = \relative c' {
   \key a \major
@@ -26,4 +35,11 @@ chantToneDismissalLaity = \relative c' {
   <cs e a>4 a' a gs <b, d fs> <cs e a> a'4. \divisioMaior \break
   <cs, fs a>4 a' a a a a a a <cs, e a>4. \divisioMaior \break
   <d fs a>4 <cs e a> \finalis
+}
+
+chantToneDismissalLaityWords = \lyricmode {
+  May the Lord bless us,
+  pro -- tect us from all e -- vil,
+  and bring us to ev -- er -- lasting life.
+  A -- men.
 }
