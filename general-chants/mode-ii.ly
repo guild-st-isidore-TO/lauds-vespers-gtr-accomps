@@ -7,8 +7,7 @@ chantToneIIA = \relative c' {
 }
 
 chantToneIIAChords = \chordmode {
-  a1:m c4.
-  c2. f2 d4:m
+  a1
 }
 
 chantToneIID = \relative c' {
@@ -20,6 +19,6 @@ chantToneIID = \relative c' {
 }
 
 chantToneIIDChords = \chordmode {
-  a1:m c4.
-  c2. f2 d4:m
+  a2. fs4:m cs4.:m
+  a2 fs4.:m
 }

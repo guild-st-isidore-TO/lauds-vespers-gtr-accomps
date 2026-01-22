@@ -7,6 +7,5 @@ chantToneIIIb = \relative c' {
 }
 
 chantToneIIIbChords = \chordmode {
-  a1:m c4.
-  c2. f2 d4:m
+  a1
 }

@@ -8,5 +8,5 @@ chantToneVIF = \relative c' {
 
 chantToneVIFChords = \chordmode {
   a1:m c4.
-  c2. f2 d4:m
+  c2. f4.
 }

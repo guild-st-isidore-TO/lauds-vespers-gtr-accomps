@@ -11,6 +11,7 @@ chantToneIntercessions = \relative c' {
 }
 
 chantToneIntercessionsChords = \chordmode {
+  s2 d2.:m g4:m f4.
   a1:m c4.
-  c2. f2 d4:m
+  s2. c2. f4.
 }

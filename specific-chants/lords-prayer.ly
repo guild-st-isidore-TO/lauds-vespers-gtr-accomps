@@ -8,9 +8,9 @@ chantToneLordsPrayerPreface = \relative c' {
 }
 
 chantToneLordsPrayerPrefaceChords = \chordmode {
-  f2 c2. f4.
-  d2. d1 f4.
-  g2. f4 c4.
+  f2 c2.:m f4.
+  d2.:m d1:m f4.
+  g2.:m f4 c4.
 }
 
 chantToneLordsPrayerPrefaceWords = \lyricmode {
@@ -26,31 +26,40 @@ chantToneLordsPrayer = \relative c' {
   <a c f(>4 g') <c, f a> a' \divisioMinima
   g <c, f bf> a' <a, c g'> f' \divisioMinima \break
   <bf, d g> f' f( g) <c, f a> <bf d g> \divisioMaxima \break
-  a' <d, g bf(> a') g( a) <a, c g'> f' \divisioMaior \break
-  a <d, g bf(> a') g <a, c g'> f' \divisioMaior \break
+  a' <d, g bf(> a') g( a) <a, c g'(> f') \divisioMaior \break
+  a <d, g bf(> a') g <a, c g'(> f') \divisioMaior \break
   <bf, d g> a' g f <a, d f(> g') a <bf, d g(> a') g \finalis \break
 
   <c, f a> g' a <d, g bf> a' <bf, d g(> a') g <a, c g'(> f') \divisioMaxima \break
   g a <d, g bf(> a') g a <a, c g'> f' f \divisioMaior \break
-  g <a, d f> g' a <bf, d g> f' <a, d f> g' a <bf, d g(> a') g \divisioMaxima \break
+  g <a, d f> g' a <bf, d g> \divisioMaior f' <a, d f> g' a <bf, d g(> a') g \divisioMaxima \break
   <f, a d> f' <bf, d g> g' g g a <a, c g'(> f') f \divisioMaxima \break
   <bf, d f> g' <bf, d g> g' g a <c, e g(> f) <a, c f> \finalis 
 }
 
 chantToneLordsPrayerChords = \chordmode {
-  f2 c2. f4.
-  d2. d1 f4.
-  g2. f4 c4.
+  f2 f2.
+  f2 f2
+  g1:m f4 g2:m
+  g1:m f2.
+  g2.:m f2
+  g1:m d2.:m g2.:m
+
+  f2. g2:m g2.:m f1
+  g1:m f1
+  d2.:m g2:m d2.:m g2.:m
+  d2:m g1:m s4 f2.
+  bf2 g1:m c2 f4
 }
 
 chantToneLordsPrayerWords = \lyricmode {
   Our Fa -- ther, who art in hea -- ven,
-  hal -- lowed be thy name,
-  thy king -- dom co -- me,
-  thy will be do -- ne on earth as it is in hea -- ven.
+  hal -- lowed be thy name;
+  thy king -- dom come,
+  thy will be done on earth as it is in hea -- ven.
   Give us this day our dai -- ly bread,
   and for -- give us our tres -- pass -- es.
-  As we for -- give those who tres -- pass a -- gainst us,
+  As we for -- give those who tres -- pass a -- gainst us;
   and lead us not in -- to temp -- ta -- tion,
   but de -- liv -- er us from e -- vil.
 }

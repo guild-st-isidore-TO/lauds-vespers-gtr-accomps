@@ -7,8 +7,7 @@ chantToneVa = \relative c' {
 }
 
 chantToneVaChords = \chordmode {
-  a1:m c4.
-  c2. f2 d4:m
+  a1
 }
 
 chantToneVc = \relative c' {
@@ -20,6 +19,5 @@ chantToneVc = \relative c' {
 }
 
 chantToneVcChords = \chordmode {
-  a1:m c4.
-  c2. f2 d4:m
+  a1
 }
