@@ -1,25 +1,29 @@
 % by Priest or Deacon
 chantToneDismissalClergy = \relative c' {
-  \key c \major
+  \key a \major
   \set Score.timing = ##f
   
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+  <cs e a>4 a' a a <cs, fs a>4. \finalis \break
+  <d fs a>4 a' a <cs, e a> a'4. \finalis \break
+  <cs, e a>4 a' a gs <b, d fs> <cs e a> a' \divisioMaior \break
+
+  <cs, fs a> a' a \divisioMaior
+  gs <b, d fs> <cs e a> \divisioMinima \break
+
+  <d fs a> a' a a <cs, e a>4. <b d fs>4. \finalis
+  <d fs a>4. <cs e a>4. \finalis \break
+
+  <e a cs(> b') a( gs) <b, e a>4.( <b e gs>) \finalis \break
+  <e a cs(> b') a gs <b, e a>4.( <b e gs>) \finalis
 }
 
 % when no Priest or Deacon is present
 chantToneDismissalLaity = \relative c' {
-  \key c \major
+  \key a \major
   \set Score.timing = ##f
   
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g f) a2 \finalis \break
-  f4 a2 \divisioMinima
-  g4 b a2 f2 \divisioMaior
-  g4( f) f( g a) g2( f) \finalis
+  <cs e a>4 a' a a a <cs, fs a>4. \divisioMaior \break
+  <cs e a>4 a' a gs <b, d fs> <cs e a> a'4. \divisioMaior \break
+  <cs, fs a>4 a' a a a a a a <cs, e a>4. \divisioMaior \break
+  <d fs a>4 <cs e a> \finalis
 }
