@@ -84,19 +84,26 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 \book {
   \bookOutputName "Chant Tone Accompaniments on Guitar for Lauds and Vespers"
+  #(set-global-staff-size 22)
 
   \bookpart {
     \header {
-      title = \markup \abs-fontsize #34 {
+      title = \markup \abs-fontsize #30 {
         \center-column {
-          \line { "Chant Tone Accompaniments" }
+          \line { "Chant Tones" }
+          \line { "& Accompaniments" }
           \hspace #0
         }
       }
-      subtitle = \markup { \abs-fontsize #18 "on Guitar for Lauds and Vespers" }
+      subtitle = \markup \abs-fontsize #20 {
+        \center-column {
+          \line { "on Guitar for" }
+          \line { "Lauds and Vespers" }
+        }
+      }
     }
     \paper {
-      top-markup-spacing.basic-distance = #20
+      top-markup-spacing.basic-distance = #7.5
       left-margin = 1.5\in
       right-margin = 1.5\in
     }
@@ -105,8 +112,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
         \center-column \italic {
           \hspace #0
           \hspace #0
-          "by the Guild of St. Isidore (TO)"
-          \with-color #grey \concat { "Generated on " \date }
+          "by the"
+          \bold { "Guild of St. Isidore (TO)" }
+          \hspace #0
+          \with-color #grey { "Generated on " }
+          \with-color #grey { \date }
         }
       }
     }
@@ -147,12 +157,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIDChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantID" { \clef "treble_8" \chantToneID }
+          \new GregorianTranscriptionVoice = "chantID" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneID
+          }
         >>
-        \new TabStaff { \clef tab \chantToneID }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneID }
       >>
       \layout {
         indent = #0
@@ -169,12 +189,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIfChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantIf" { \clef "treble_8" \chantToneIf }
+          \new GregorianTranscriptionVoice = "chantIf" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneIf
+          }
         >>
-        \new TabStaff { \clef tab \chantToneIf }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneIf }
       >>
       \layout {
         indent = #0
@@ -191,12 +221,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIIAChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantIIA" { \clef "treble_8" \chantToneIIA}
+          \new GregorianTranscriptionVoice = "chantIIA" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneIIA
+          }
         >>
-        \new TabStaff { \clef tab \chantToneIIA }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneIIA }
       >>
       \layout {
         indent = #0
@@ -213,12 +253,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIIDChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantIID" { \clef "treble_8" \chantToneIID}
+          \new GregorianTranscriptionVoice = "chantIID" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneIID
+          }
         >>
-        \new TabStaff { \clef tab \chantToneIID }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneIID }
       >>
       \layout {
         indent = #0
@@ -235,12 +285,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIIIbChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantIIIb" { \clef "treble_8" \chantToneIIIb}
+          \new GregorianTranscriptionVoice = "chantIIIb" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneIIIb
+          }
         >>
-        \new TabStaff { \clef tab \chantToneIIIb }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneIIIb }
       >>
       \layout {
         indent = #0
@@ -257,12 +317,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIVaChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantIVa" { \clef "treble_8" \chantToneIVa}
+          \new GregorianTranscriptionVoice = "chantIVa" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneIVa
+          }
         >>
-        \new TabStaff { \clef tab \chantToneIVa }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneIVa }
       >>
       \layout {
         indent = #0
@@ -279,12 +349,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIVdChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantIVd" { \clef "treble_8" \chantToneIVd}
+          \new GregorianTranscriptionVoice = "chantIVd" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneIVd
+          }
         >>
-        \new TabStaff { \clef tab \chantToneIVd }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneIVd }
       >>
       \layout {
         indent = #0
@@ -301,12 +381,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVaChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantVa" { \clef "treble_8" \chantToneVa}
+          \new GregorianTranscriptionVoice = "chantVa" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneVa
+          }
         >>
-        \new TabStaff { \clef tab \chantToneVa }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneVa }
       >>
       \layout {
         indent = #0
@@ -323,12 +413,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVcChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantVc" { \clef "treble_8" \chantToneVc}
+          \new GregorianTranscriptionVoice = "chantVc" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneVc
+          }
         >>
-        \new TabStaff { \clef tab \chantToneVc }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneVc }
       >>
       \layout {
         indent = #0
@@ -345,12 +445,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIFChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantVIF" { \clef "treble_8" \chantToneVIF}
+          \new GregorianTranscriptionVoice = "chantVIF" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneVIF
+          }
         >>
-        \new TabStaff { \clef tab \chantToneVIF }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneVIF }
       >>
       \layout {
         indent = #0
@@ -367,12 +477,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIIaChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantVIIa" { \clef "treble_8" \chantToneVIIa}
+          \new GregorianTranscriptionVoice = "chantVIIa" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneVIIa
+          }
         >>
-        \new TabStaff { \clef tab \chantToneVIIa }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneVIIa }
       >>
       \layout {
         indent = #0
@@ -389,12 +509,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIIdChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantVIId" { \clef "treble_8" \chantToneVIId}
+          \new GregorianTranscriptionVoice = "chantVIId" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneVIId
+          }
         >>
-        \new TabStaff { \clef tab \chantToneVIId }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneVIId }
       >>
       \layout {
         indent = #0
@@ -411,12 +541,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIIIaChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantVIIIa" { \clef "treble_8" \chantToneVIIIa}
+          \new GregorianTranscriptionVoice = "chantVIIIa" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneVIIIa
+          }
         >>
-        \new TabStaff { \clef tab \chantToneVIIIa }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneVIIIa }
       >>
       \layout {
         indent = #0
@@ -433,12 +573,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIIIgChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantVIIIg" { \clef "treble_8" \chantToneVIIIg}
+          \new GregorianTranscriptionVoice = "chantVIIIg" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneVIIIg
+          }
         >>
-        \new TabStaff { \clef tab \chantToneVIIIg }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneVIIIg }
       >>
       \layout {
         indent = #0
@@ -455,12 +605,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIntercessionsChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantIntercessions" { \clef "treble_8" \chantToneIntercessions}
+          \new GregorianTranscriptionVoice = "chantIntercessions" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneIntercessions
+          }
         >>
-        \new TabStaff { \clef tab \chantToneIntercessions }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneIntercessions }
       >>
       \layout {
         indent = #0
@@ -477,18 +637,32 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneLordsPrayerPrefaceChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" { \clef "treble_8" \chantToneLordsPrayerPreface}
-          \new Lyrics = "chantLordsPrayerPreface"
+          \new GregorianTranscriptionVoice = "chantLordsPrayerPreface" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneLordsPrayerPreface
+          }
+          \new Lyrics = "chantLordsPrayerPreface" \with {
+            \override LyricText.font-size = -0.125
+            \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2.5
+            \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.5
+          }
           \context Lyrics = "chantLordsPrayerPreface" {
             \lyricsto "chantLordsPrayerPreface" {
               \chantToneLordsPrayerPrefaceWords
             }
           }
         >>
-        \new TabStaff { \clef tab \chantToneLordsPrayerPreface }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneLordsPrayerPreface }
       >>
       \layout {
         indent = #0
@@ -505,18 +679,32 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneLordsPrayerChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantLordsPrayer" { \clef "treble_8" \chantToneLordsPrayer}
-          \new Lyrics = "chantLordsPrayer"
+          \new GregorianTranscriptionVoice = "chantLordsPrayer" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneLordsPrayer
+          }
+          \new Lyrics = "chantLordsPrayer" \with {
+            \override LyricText.font-size = -0.125
+            \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2.5
+            \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.5
+          }
           \context Lyrics = "chantLordsPrayer" {
             \lyricsto "chantLordsPrayer" {
               \chantToneLordsPrayerWords
             }
           }
         >>
-        \new TabStaff { \clef tab \chantToneLordsPrayer }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneLordsPrayer }
       >>
       \layout {
         indent = #0
@@ -533,12 +721,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantTonePrayerBasicChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantPrayerBasic" { \clef "treble_8" \chantTonePrayerBasic}
+          \new GregorianTranscriptionVoice = "chantPrayerBasic" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantTonePrayerBasic
+          }
         >>
-        \new TabStaff { \clef tab \chantTonePrayerBasic }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantTonePrayerBasic }
       >>
       \layout {
         indent = #0
@@ -555,12 +753,22 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantTonePrayerEndingsChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantPrayerEndings" { \clef "treble_8" \chantTonePrayerEndings}
+          \new GregorianTranscriptionVoice = "chantPrayerEndings" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantTonePrayerEndings
+          }
         >>
-        \new TabStaff { \clef tab \chantTonePrayerEndings }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantTonePrayerEndings }
       >>
       \layout {
         indent = #0
@@ -577,18 +785,32 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantTonePrayerPetitionChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantPrayerPetition" { \clef "treble_8" \chantTonePrayerPetition}
-          \new Lyrics = "chantPrayerPetition"
+          \new GregorianTranscriptionVoice = "chantPrayerPetition" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantTonePrayerPetition
+          }
+          \new Lyrics = "chantPrayerPetition" \with {
+            \override LyricText.font-size = -0.125
+            \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2.5
+            \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.5
+          }
           \context Lyrics = "chantPrayerPetition" {
             \lyricsto "chantPrayerPetition" {
               \chantTonePrayerPetitionWords
             }
           }
         >>
-        \new TabStaff { \clef tab \chantTonePrayerPetition }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantTonePrayerPetition }
       >>
       \layout {
         indent = #0
@@ -605,18 +827,32 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneDismissalClergyChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantDismissalClergy" { \clef "treble_8" \chantToneDismissalClergy}
-          \new Lyrics = "chantDismissalClergy"
+          \new GregorianTranscriptionVoice = "chantDismissalClergy" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneDismissalClergy
+          }
+          \new Lyrics = "chantDismissalClergy" \with {
+            \override LyricText.font-size = -0.125
+            \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2.5
+            \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.5
+          }
           \context Lyrics = "chantDismissalClergy" {
             \lyricsto "chantDismissalClergy" {
               \chantToneDismissalClergyWords
             }
           }
         >>
-        \new TabStaff { \clef tab \chantToneDismissalClergy }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneDismissalClergy }
       >>
       \layout {
         indent = #0
@@ -633,18 +869,32 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
     \score {
       <<
         \new ChordNames {
+          \override ChordName.font-size = 0.5
+          \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+          \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneDismissalLaityChords
         }
         \new GregorianTranscriptionStaff <<
-          \new GregorianTranscriptionVoice = "chantDismissalLaity" { \clef "treble_8" \chantToneDismissalLaity}
-          \new Lyrics = "chantDismissalLaity"
+          \new GregorianTranscriptionVoice = "chantDismissalLaity" {
+            \clef "treble_8"
+            \override Slur.direction = #UP
+            \chantToneDismissalLaity
+          }
+          \new Lyrics = "chantDismissalLaity" \with {
+            \override LyricText.font-size = -0.125
+            \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2.5
+            \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2.5
+          }
           \context Lyrics = "chantDismissalLaity" {
             \lyricsto "chantDismissalLaity" {
               \chantToneDismissalLaityWords
             }
           }
         >>
-        \new TabStaff { \clef tab \chantToneDismissalLaity }
+        \new TabStaff \with {
+          \remove Caesura_engraver
+          \magnifyStaff #1.125
+        } { \clef tab \chantToneDismissalLaity }
       >>
       \layout {
         indent = #0
