@@ -15,7 +15,7 @@ chantTonePrayerEndings = \relative c' {
   \set Score.timing = ##f
   \key a \major
 
-  <cs e a>2 a'4 <b, d fs> <cs e a>4. \finalis
+  <cs e a>2 gs'4 <b, d fs> <cs e a>4. \finalis
   <d fs a>2 <cs e a>4. \finalis 
 }
 
