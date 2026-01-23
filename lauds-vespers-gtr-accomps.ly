@@ -162,7 +162,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIDChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantID" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -194,7 +199,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIfChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantIf" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -226,7 +236,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIIAChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantIIA" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -258,7 +273,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIIDChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantIID" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -290,7 +310,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIIIbChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantIIIb" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -322,7 +347,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIVaChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantIVa" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -354,7 +384,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneIVdChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantIVd" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -386,7 +421,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVaChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantVa" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -418,7 +458,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVcChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantVc" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -450,7 +495,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIFChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantVIF" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -482,7 +532,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIIaChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantVIIa" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -514,7 +569,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIIdChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantVIId" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -546,7 +606,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIIIaChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantVIIIa" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -578,7 +643,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantToneVIIIgChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantVIIIg" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -726,7 +796,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantTonePrayerBasicChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantPrayerBasic" {
             \clef "treble_8"
             \override Slur.direction = #UP
@@ -758,7 +833,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
           \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #2
           \chantTonePrayerEndingsChords
         }
-        \new GregorianTranscriptionStaff <<
+        \new GregorianTranscriptionStaff \with {
+          \override VerticalAxisGroup.default-staff-staff-spacing =
+          #'((basic-distance . 6)
+             (minimum-distance . 5)
+             (padding . 1))
+        } <<
           \new GregorianTranscriptionVoice = "chantPrayerEndings" {
             \clef "treble_8"
             \override Slur.direction = #UP
